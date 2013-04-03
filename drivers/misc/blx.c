@@ -27,7 +27,7 @@ static ssize_t blx_charginglimit_write(struct device * dev, struct device_attrib
 
     if(sscanf(buf, "%u\n", &data) == 1) 
 	{
-	    if (data >= 80 && data <= MAX_CHARGINGLIMIT) //80% minimum for sensibilityness
+	    if (data >= 90 && data <= MAX_CHARGINGLIMIT) //80% minimum for sensibilityness
 		{
 		    charging_limit = data;
 		}
